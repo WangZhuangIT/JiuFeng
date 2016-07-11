@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText_search_man"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_search"
+            android:gravity="center"
+            android:hint="输入编号或逝者名字"
+            android:singleLine="true"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/imageView_search_man"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@mipmap/search2" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gridView_man"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"></com.handmark.pulltorefresh.library.PullToRefreshGridView>
+
+</LinearLayout>

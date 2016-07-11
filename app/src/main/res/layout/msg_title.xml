@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/msgTitleView_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/login_page_back_button_bg"/>
+
+    <TextView
+        android:id="@+id/msgTitleView_searchKey"
+        android:layout_toRightOf="@id/msgTitleView_back"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/colorRed"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/msgTitleView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="新闻"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_below="@id/msgTitleView_title"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#aca6a6"/>
+</RelativeLayout>

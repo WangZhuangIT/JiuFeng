@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lingzhuo.jiufeng.activity.ThemeWorshipActivity">
+
+    <com.lingzhuo.jiufeng.view.MsgTitleView
+        android:id="@+id/MsgTitleView_theme3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.lingzhuo.jiufeng.view.MsgTitleView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.lingzhuo.jiufeng.view.MyEditText
+                    android:id="@+id/textView_worshiper"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edittext"
+                    android:hint="姓名"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/imageView_worshiper_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="30dp"
+                    android:src="@mipmap/add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.lingzhuo.jiufeng.view.MyEditText
+                    android:id="@+id/textView_worship_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edittext"
+                    android:gravity="start"
+                    android:hint="留言标题\n\n"
+                    android:maxLength="50"
+                    android:padding="10dp"
+                    app:attrNums="50" />
+
+                <ImageView
+                    android:id="@+id/imageView_worship_title_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="30dp"
+                    android:src="@mipmap/add" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.lingzhuo.jiufeng.view.MyEditText
+                    android:id="@+id/textView_worship_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edittext"
+                    android:gravity="start"
+                    android:hint="请输入您对逝者的问候留言\n\n\n\n\n\n\n\n"
+                    android:maxLength="200"
+                    android:padding="10dp"
+                    app:attrNums="200" />
+
+                <ImageView
+                    android:id="@+id/imageView_worship_content_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="30dp"
+                    android:src="@mipmap/add" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_finish_worship"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_login"
+                android:text="完成跪拜"
+                android:layout_marginBottom="20dp"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

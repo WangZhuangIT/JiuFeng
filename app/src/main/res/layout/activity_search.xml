@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.lingzhuo.jiufeng.activity.SearchActivity">
+
+    <com.lingzhuo.jiufeng.view.TitleView
+        android:id="@+id/titleView_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"></com.lingzhuo.jiufeng.view.TitleView>
+
+    <com.lingzhuo.jiufeng.view.MyEditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:maxLength="8"
+        app:attrNums="8"
+        android:singleLine="true"
+        android:drawableLeft="@mipmap/search2"
+        android:hint="请输入搜索关键字"
+        android:background="@drawable/edittext"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/button_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_login"
+        android:text="搜索"/>
+</LinearLayout>

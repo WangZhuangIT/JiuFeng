@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="5dp">
+    <ImageView
+        android:id="@+id/articial_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/img_none"/>
+
+    <TextView
+        android:id="@+id/articial_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/articial_pic"
+        android:textColor="#000000"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/articial_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="10sp"
+        android:layout_toRightOf="@id/articial_pic"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:text="时间"/>
+
+    <TextView
+        android:id="@+id/articial_creater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:text="创建者"/>
+
+</RelativeLayout>
